@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html class="dark" lang="en" data-lt-installed="true" style="">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Posible nombre de la página</title>
+<link rel="stylesheet" href="styles.css" />
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&amp;family=Hanken+Grotesk:wght@400;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-on-surface": "#2e3132",
+                        "inverse-primary": "#565d79",
+                        "on-secondary-fixed": "#261900",
+                        "on-tertiary-fixed": "#181c1f",
+                        "on-primary-fixed": "#131a33",
+                        "surface-container": "#1d2021",
+                        "on-surface": "#e1e3e4",
+                        "secondary-fixed-dim": "#e9c176",
+                        "inverse-surface": "#e1e3e4",
+                        "surface-bright": "#373a3b",
+                        "tertiary-fixed": "#e0e3e6",
+                        "surface-container-highest": "#323536",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "primary-fixed": "#dbe1ff",
+                        "on-secondary-container": "#dab36a",
+                        "on-primary-fixed-variant": "#3e4660",
+                        "error-container": "#93000a",
+                        "tertiary-container": "#101416",
+                        "surface-container-lowest": "#0c0f10",
+                        "secondary": "#e9c176",
+                        "tertiary": "#c3c7ca",
+                        "surface-container-low": "#191c1d",
+                        "on-primary": "#282f49",
+                        "on-tertiary-container": "#7b7f82",
+                        "on-secondary": "#412d00",
+                        "secondary-fixed": "#ffdea5",
+                        "on-error-container": "#ffdad6",
+                        "surface-dim": "#111415",
+                        "on-error": "#690005",
+                        "on-primary-container": "#767d9a",
+                        "outline": "#909098",
+                        "surface-tint": "#bec5e5",
+                        "primary": "#bec5e5",
+                        "primary-fixed-dim": "#bec5e5",
+                        "on-surface-variant": "#c6c6ce",
+                        "surface-variant": "#323536",
+                        "background": "#111415",
+                        "primary-container": "#0a122a",
+                        "on-tertiary-fixed-variant": "#43474a",
+                        "outline-variant": "#45464d",
+                        "tertiary-fixed-dim": "#c3c7ca",
+                        "secondary-container": "#604403",
+                        "error": "#ffb4ab",
+                        "on-background": "#e1e3e4",
+                        "surface-container-high": "#282a2b",
+                        "on-tertiary": "#2d3134",
+                        "surface": "#111415"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "80px",
+                        "container-max": "1440px",
+                        "section-padding": "120px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Sora"],
+                        "body-md": ["Hanken Grotesk"],
+                        "display-lg": ["Sora"],
+                        "headline-lg": ["Sora"],
+                        "display-lg-mobile": ["Sora"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "label-caps": ["Hanken Grotesk"],
+                        "quote-serif": ["Sora"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "quote-serif": ["20px", {"lineHeight": "30px", "fontWeight": "300"}]
+                    }
+                },
+            },
+        }
+    </script>
+
+</head>
+<body class="font-body-md text-body-md selection:bg-secondary/30 loaded">
+<a class="skip-link" href="#main-content">Saltar al contenido</a>
+<div class="texture-overlay"></div>
+<!-- Navigation Drawer -->
+<div class="fixed inset-0 z-[60] bg-black/70 backdrop-blur-sm" id="drawer-overlay" aria-hidden="true" onclick="toggleDrawer()"></div>
+<aside class="fixed top-0 left-0 h-full w-[85vw] max-w-[400px] z-[70] bg-primary-container shadow-2xl flex flex-col border-r border-outline-variant/20" id="nav-drawer" role="dialog" aria-modal="true" aria-label="Menú de navegación">
+<!-- Drawer Header -->
+<div class="flex justify-between items-center px-8 py-8">
+<div class="font-headline-md text-headline-md text-secondary tracking-tighter">Posible nombre de la página</div>
+<button class="text-on-surface-variant hover:text-secondary transition-colors duration-300" onclick="toggleDrawer()" aria-label="Cerrar menú de navegación">
+<span class="material-symbols-outlined text-3xl">close</span>
+</button>
+</div>
+<!-- Scrollable Menu Content -->
+<div class="flex-grow overflow-y-auto custom-scrollbar px-6 pb-8">
+<!-- National Collections -->
+<section class="mb-10">
+<h3 class="font-label-caps text-label-caps text-on-surface-variant/50 px-4 mb-4" data-i18n data-es="NACIONALES" data-en="NATIONAL">NACIONALES</h3>
+<nav class="space-y-1">
+<a class="drawer-category-link drawer-category-button flex items-center justify-between px-4 py-3 text-on-surface hover:bg-secondary-container/10 transition-all group rounded-sm" href="#" data-target="millonarios" data-region="colombian">
+<span class="font-headline-md text-headline-md text-[20px]" data-i18n data-es="Millonarios" data-en="Millonarios">Millonarios</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0">chevron_right</span>
+</a>
+<a class="drawer-category-link drawer-category-button flex items-center justify-between px-4 py-3 text-on-surface hover:bg-secondary-container/10 transition-all group rounded-sm" href="#" data-target="nacional" data-region="colombian">
+<span class="font-headline-md text-headline-md text-[20px]" data-i18n data-es="Atlético Nacional" data-en="Atlético Nacional">Atlético Nacional</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0">chevron_right</span>
+</a>
+<a class="drawer-category-link drawer-category-button flex items-center justify-between px-4 py-3 text-on-surface hover:bg-secondary-container/10 transition-all group rounded-sm" href="#" data-target="santafe" data-region="colombian">
+<span class="font-headline-md text-headline-md text-[20px]" data-i18n data-es="Santa Fe" data-en="Santa Fe">Santa Fe</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0">chevron_right</span>
+</a>
+</nav>
+</section>
+<!-- National Team Countries -->
+<section class="mb-10">
+<h3 class="font-label-caps text-label-caps text-on-surface-variant/50 px-4 mb-4" data-i18n data-es="SELECCIONES" data-en="Countries">SELECCIONES</h3>
+<nav class="space-y-1">
+<a class="drawer-category-link drawer-category-button flex items-center justify-between px-4 py-3 text-on-surface hover:bg-secondary-container/10 transition-all group rounded-sm" href="#" data-target="brasil" data-region="countries">
+<span class="font-headline-md text-headline-md text-[20px]" data-i18n data-es="Brasil" data-en="Brazil">Brasil</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0">chevron_right</span>
+</a>
+</nav>
+</section>
+
+<!-- Club Teams -->
+<section class="mb-10">
+<h3 class="font-label-caps text-label-caps text-on-surface-variant/50 px-4 mb-4" data-i18n data-es="CLUBES" data-en="Clubs">CLUBES</h3>
+<nav class="space-y-1">
+<a class="drawer-category-link drawer-category-button flex items-center justify-between px-4 py-3 text-on-surface hover:bg-secondary-container/10 transition-all group rounded-sm" href="#" data-target="realMadrid" data-region="clubs">
+<span class="font-headline-md text-headline-md text-[20px]" data-i18n data-es="Real Madrid" data-en="Real Madrid">Real Madrid</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0">chevron_right</span>
+</a>
+<a class="drawer-category-link drawer-category-button flex items-center justify-between px-4 py-3 text-on-surface hover:bg-secondary-container/10 transition-all group rounded-sm" href="#" data-target="liverpool" data-region="clubs">
+<span class="font-headline-md text-headline-md text-[20px]" data-i18n data-es="Liverpool" data-en="Liverpool">Liverpool</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0">chevron_right</span>
+</a>
+<a class="drawer-category-link drawer-category-button flex items-center justify-between px-4 py-3 text-on-surface hover:bg-secondary-container/10 transition-all group rounded-sm" href="#" data-target="juventus" data-region="clubs">
+<span class="font-headline-md text-headline-md text-[20px]" data-i18n data-es="Juventus" data-en="Juventus">Juventus</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0">chevron_right</span>
+</a>
+</nav>
+</section>
+<!-- Competitions -->
+<section class="mb-10">
+<h3 class="font-label-caps text-label-caps text-on-surface-variant/50 px-4 mb-4" data-i18n data-es="COMPETENCIAS" data-en="COMPETITIONS">COMPETENCIAS</h3>
+<nav class="space-y-1">
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface hover:bg-secondary-container/10 transition-all group rounded-sm" href="{{DATA:SCREEN:SCREEN_9}}">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary">trophy</span>
+<span class="font-headline-md text-headline-md text-[20px]" data-i18n data-es="Champions League" data-en="Champions League">Champions League</span>
+</a>
+</nav>
+</section>
+</div>
+<!-- Footer Actions -->
+<div class="mt-auto p-6 bg-surface-container-low/50 border-t border-outline-variant/10">
+<a class="flex items-center justify-center gap-3 w-full py-4 bg-secondary text-on-secondary font-label-caps text-label-caps hover:bg-secondary-fixed-dim transition-colors active:scale-95 duration-200" href="https://wa.me/#" aria-label="Contacta por WhatsApp">
+<span class="material-symbols-outlined text-xl">chat</span>
+                <span data-i18n data-es="Contacta por WhatsApp" data-en="WHATSAPP CONCIERGE">Contacta por WhatsApp</span>
+            </a>
+</div>
+</aside>
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 glass-header border-b border-outline-variant/30 flex justify-between items-center px-margin-mobile h-16">
+<div class="flex items-center gap-4">
+<button class="text-secondary hover:opacity-80 transition-opacity active:scale-95 duration-200" onclick="toggleDrawer()" aria-expanded="false" aria-controls="nav-drawer" aria-label="Abrir menú de navegación">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<button id="home-logo" class="font-label-caps text-label-caps text-secondary uppercase tracking-widest hover:text-secondary-fixed-dim" type="button" aria-label="Ir a Selecciones">Logo</button>
+</div>
+<span class="font-headline-lg-mobile text-headline-lg-mobile tracking-tighter text-secondary" data-i18n data-es="Posible nombre de la página" data-en="Website name">Posible nombre de la página</span>
+<div class="flex items-center gap-2">
+<button id="lang-toggle" class="rounded-full border border-outline-variant/40 px-3 py-1 text-[11px] font-label-caps uppercase tracking-[0.2em] text-secondary hover:bg-secondary/10" type="button" aria-label="Cambiar idioma">EN</button>
+<button class="text-secondary hover:opacity-80 transition-opacity active:scale-95 duration-200" aria-label="Ver carrito">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+</header>
+<div class="fixed top-16 w-full z-40 glass-header border-b border-outline-variant/10">
+<div class="flex flex-col">
+<!-- Main Tabs with sliding indicator -->
+<div class="flex justify-center gap-8 py-3 border-b border-outline-variant/5 tab-indicator-container" id="main-tabs">
+<button class="main-tab font-label-caps text-label-caps uppercase tracking-widest transition-all duration-300" data-index="0" data-region="colombian" data-i18n data-es="Nacional" data-en="National">Nacional</button>
+<button class="main-tab font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest hover:text-secondary transition-all duration-300" data-index="1" data-region="countries" data-i18n data-es="Selecciones" data-en="Countries">Selecciones</button>
+<button class="main-tab font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest hover:text-secondary transition-all duration-300" data-index="2" data-region="clubs" data-i18n data-es="Clubes" data-en="Clubs">Clubes</button>
+<div class="tab-indicator" id="active-tab-line" style="width: 69px; left: 91px;"></div>
+</div>
+<!-- Sub-categories -->
+<div class="flex overflow-x-auto custom-scrollbar whitespace-nowrap px-margin-mobile py-2 gap-6 justify-center">
+<button class="sub-category-button font-label-caps text-[10px] text-on-surface-variant hover:text-secondary uppercase tracking-widest transition-colors duration-300 active-filter-text" data-target="millonarios" data-region="colombian">Millonarios</button>
+<button class="sub-category-button font-label-caps text-[10px] text-on-surface-variant hover:text-secondary uppercase tracking-widest transition-colors duration-300" data-target="nacional" data-region="colombian">Atlético Nacional</button>
+<button class="sub-category-button font-label-caps text-[10px] text-on-surface-variant hover:text-secondary uppercase tracking-widest transition-colors duration-300" data-target="santafe" data-region="colombian">Santa Fe</button>
+<button class="sub-category-button font-label-caps text-[10px] text-on-surface-variant hover:text-secondary uppercase tracking-widest transition-colors duration-300" data-target="brasil" data-region="countries">Brasil</button>
+<button class="sub-category-button font-label-caps text-[10px] text-on-surface-variant hover:text-secondary uppercase tracking-widest transition-colors duration-300" data-target="realMadrid" data-region="clubs">Real Madrid</button>
+<button class="sub-category-button font-label-caps text-[10px] text-on-surface-variant hover:text-secondary uppercase tracking-widest transition-colors duration-300" data-target="liverpool" data-region="clubs">Liverpool</button>
+<button class="sub-category-button font-label-caps text-[10px] text-on-surface-variant hover:text-secondary uppercase tracking-widest transition-colors duration-300" data-target="juventus" data-region="clubs">Juventus</button>
+</div>
+</div>
+</div>
+<main class="pb-24 pt-40" id="main-content">
+<!-- Filter Bar -->
+<section class="px-margin-mobile overflow-x-auto custom-scrollbar whitespace-nowrap mb-8 sticky z-40 bg-background/95 py-4 top-36">
+<div class="flex gap-8 items-center border-b border-outline-variant/5 pb-2">
+<button class="category-filter font-label-caps text-label-caps uppercase tracking-widest transition-all duration-300 text-on-surface-variant" data-i18n data-es="Todas las piezas" data-en="All Pieces">Todas las piezas</button>
+<button class="category-filter font-label-caps text-label-caps uppercase tracking-widest hover:text-secondary transition-all duration-300 text-on-surface-variant" data-i18n data-es="Edición limitada" data-en="Limited Edition">Edición limitada</button>
+</div>
+</section>
+<!-- Product Preview Panel -->
+<section class="px-margin-mobile mb-8" aria-live="polite">
+<div id="product-panel" class="rounded-3xl border border-outline-variant/20 bg-surface-container-low py-8 px-6">
+<p class="font-label-caps text-label-caps text-on-surface-variant mb-4" id="panel-label">Colección destacada</p>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6" id="panel-heading">Posible imagen adicional</h2>
+<div class="relative h-[260px] rounded-3xl border border-outline-variant/10 bg-surface-container-highest flex items-center justify-center text-on-surface-variant text-center overflow-hidden">
+<img id="panel-image" alt="" class="hidden absolute inset-0 w-full h-full object-cover" src="images/Estadio.jpeg">
+<span id="panel-placeholder" class="relative z-10 px-6">Aquí irá la posible imagen adicional para la categoría seleccionada.</span>
+</div>
+</div>
+</section>
+<!-- Product Catalog Grid -->
+<section class="px-margin-mobile space-y-12">
+<!-- Large Featured Card -->
+<div class="reveal group flex flex-col gap-4 cursor-pointer active product-card" data-region="colombian" data-team="millonarios" data-title="Millonarios">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container-low product-image-container">
+<img alt="Imagen de Millonarios" class="w-full h-full object-cover product-card-scale" src="images/millonarios.jpg" data-local-src="images/millonarios.jpg">
+</div>
+</div>
+<!-- Bento Style Secondary Grid -->
+<h3 class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">CATÁLOGO</h3>
+<div class="grid grid-cols-2 gap-gutter">
+<!-- Product Item -->
+<div class="reveal group flex flex-col gap-3 cursor-pointer active product-card" data-region="clubs" data-team="realMadrid" data-title="Real Madrid">
+<div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low product-image-container">
+<img alt="Tailored performance jacket" class="w-full h-full object-cover product-card-scale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB0GhgjIp8bIo1FZYXz-8vIMGXHsBZZtUvzCMVXWMhElK41jmN7FRac5wgtDotDxnM5-6IkVnIntm1caTBxzbBENREvE_Rs7zoriwe2fMEAIeV2tcsedqEI_goyodTCWBVBaK0cDm1-22ie0yvB0drqM_u_A-CggXrYNmpUIXZ1RM5448sBAiSNP5r2kl_UszuhZkvDqZjmPk1nY-KlRGrXx91XwCPtRLFjlndha8WYbRQrPSVT">
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="font-body-md font-bold text-secondary">$149.900 COP</span>
+</div>
+</div>
+<!-- Product Item -->
+<div class="reveal group flex flex-col gap-3 cursor-pointer active product-card catalog-card" data-region="colombian" data-team="millonarios" data-title="Catálogo Millonarios">
+<div class="relative aspect-square overflow-hidden bg-surface-container-low product-image-container">
+<img alt="Catálogo Millonarios 80 años" class="w-full h-full object-cover product-card-scale cursor-zoom-in" src="images/imagenBanner.jpeg" data-lightbox-image>
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="font-body-md font-bold text-secondary">$149.900 COP</span>
+</div>
+</div>
+<!-- Product Item -->
+<div class="reveal group flex flex-col gap-3 cursor-pointer active product-card catalog-card" data-region="colombian" data-team="nacional" data-title="Atlético Nacional">
+<div class="relative aspect-square overflow-hidden bg-surface-container-low product-image-container">
+<img alt="Imagen de Atlético Nacional" class="w-full h-full object-cover product-card-scale" src="images/placeholder-product.svg" data-local-src="images/nacional.jpg">
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="font-body-md font-bold text-secondary">$149.900 COP</span>
+</div>
+</div>
+<!-- Product Item -->
+<div class="reveal group flex flex-col gap-3 cursor-pointer active product-card catalog-card" data-region="colombian" data-team="santafe" data-title="Santa Fe">
+<div class="relative aspect-square overflow-hidden bg-surface-container-low product-image-container">
+<img alt="Imagen de Santa Fe" class="w-full h-full object-cover product-card-scale" src="images/placeholder-product.svg" data-local-src="images/santafe.jpg">
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="font-body-md font-bold text-secondary">$149.900 COP</span>
+</div>
+</div>
+<!-- Product Item -->
+<div class="reveal group flex flex-col gap-3 cursor-pointer active product-card catalog-card" data-region="countries" data-team="brasil" data-title="Brasil">
+<div class="relative aspect-square overflow-hidden bg-surface-container-low product-image-container">
+<img alt="Imagen de Brasil" class="w-full h-full object-cover product-card-scale" src="images/placeholder-product.svg" data-local-src="images/brasil.jpg">
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="font-body-md font-bold text-secondary">$149.900 COP</span>
+</div>
+</div>
+<!-- Product Item -->
+<div class="reveal group flex flex-col gap-3 cursor-pointer active product-card catalog-card" data-region="clubs" data-team="liverpool" data-title="Liverpool">
+<div class="relative aspect-square overflow-hidden bg-surface-container-low product-image-container">
+<img alt="Imagen de Liverpool" class="w-full h-full object-cover product-card-scale" src="images/placeholder-product.svg" data-local-src="images/liverpool.jpg">
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="font-body-md font-bold text-secondary">$149.900 COP</span>
+</div>
+</div>
+<!-- Product Item -->
+<div class="reveal group flex flex-col gap-3 cursor-pointer active product-card catalog-card" data-region="clubs" data-team="juventus" data-title="Juventus">
+<div class="relative aspect-square overflow-hidden bg-surface-container-low product-image-container">
+<img alt="Imagen de Juventus" class="w-full h-full object-cover product-card-scale" src="images/placeholder-product.svg" data-local-src="images/juventus.jpg">
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="font-body-md font-bold text-secondary">$149.900 COP</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Concierge Section -->
+<section class="reveal mt-section-padding px-margin-mobile pb-12 border-t border-outline-variant/10 pt-12 active">
+<div class="flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-secondary mb-4 scale-125" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2" data-i18n data-es="Acceso Concierge" data-en="Concierge Access">Acceso Concierge</h3>
+<p class="font-body-md text-on-surface-variant mb-8 max-w-[280px]" data-i18n data-es="Recibe notificaciones de lanzamientos y atención por WhatsApp." data-en="Receive notifications for limited heritage drops and atelier appointments.">Recibe notificaciones de lanzamientos y atención por WhatsApp.</p>
+<div class="w-full max-w-sm">
+<div class="relative border-b border-outline-variant group focus-within:border-secondary transition-colors duration-500">
+<input class="w-full bg-transparent border-none py-4 px-0 font-label-caps text-label-caps text-on-surface focus:ring-0 placeholder:text-on-surface-variant/40" placeholder="EMAIL ADDRESS" type="email">
+<button class="absolute right-0 top-1/2 -translate-y-1/2 text-secondary hover:translate-x-1 transition-transform duration-300">
+<span class="material-symbols-outlined">arrow_right_alt</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<div id="image-lightbox" class="fixed inset-0 z-[90] hidden items-center justify-center bg-black/85 p-4" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Vista ampliada de imagen">
+<button id="lightbox-close" class="absolute right-4 top-4 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-surface-container-high text-secondary hover:bg-surface-container-highest" type="button" aria-label="Cerrar imagen ampliada">
+<span class="material-symbols-outlined">close</span>
+</button>
+<img id="lightbox-image" alt="" class="max-h-[88vh] max-w-[92vw] object-contain shadow-2xl">
+</div>
+<script src="script.js"></script>
+
+
+</body></html>

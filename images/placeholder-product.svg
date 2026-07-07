@@ -1,0 +1,16 @@
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111415" />
+      <stop offset="100%" stop-color="#1c2430" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1200" rx="80" fill="url(#bgGradient)" />
+  <g fill="none" stroke="#e9c176" stroke-width="20" opacity="0.75">
+    <rect x="150" y="150" width="900" height="900" rx="40" />
+    <path d="M300 400C340 320 420 260 520 260C620 260 700 320 740 400" />
+    <path d="M300 570C340 650 420 710 520 710C620 710 700 650 740 570" />
+    <path d="M300 760L740 760" />
+  </g>
+  <text x="600" y="920" fill="#e9c176" font-family="Hanken Grotesk, sans-serif" font-size="70" text-anchor="middle" opacity="0.85">Posible imagen</text>
+</svg>
