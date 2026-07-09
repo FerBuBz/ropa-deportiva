@@ -159,6 +159,15 @@ a:focus-visible {
     justify-self: start;
 }
 
+.catalog-card .font-label-caps {
+    margin-bottom: 0.25rem;
+}
+
+img[src$="placeholder-product.svg"] {
+    padding: 18%;
+    background: radial-gradient(circle at center, rgba(233, 193, 118, 0.12), rgba(50, 53, 54, 0.55));
+}
+
 .group:hover .product-card-scale,
 .group:active .product-card-scale {
     transform: scale(1.03);
