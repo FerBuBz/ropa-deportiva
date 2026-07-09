@@ -156,7 +156,7 @@ a:focus-visible {
 
 .catalog-card {
     width: min(100%, 340px);
-    justify-self: start;
+    justify-self: center;
 }
 
 .catalog-card .font-label-caps {
@@ -179,4 +179,41 @@ img[src$="placeholder-product.svg"] {
 
 .active-filter-text {
     color: #e9c176;
+}
+
+/* Lightbox Zoom & Pan Styles */
+#lightbox-img-container img {
+    will-change: transform;
+}
+
+.cursor-grab {
+    cursor: grab !important;
+}
+
+.cursor-grabbing {
+    cursor: grabbing !important;
+}
+
+#image-lightbox button:hover {
+    box-shadow: 0 0 15px rgba(233, 193, 118, 0.4);
+}
+
+/* Shopping Cart Drawer CSS */
+#cart-drawer {
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+#cart-drawer.open {
+    transform: translateX(0);
+}
+#cart-overlay {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+#cart-overlay.visible {
+    opacity: 1;
+    visibility: visible;
+}
+body.cart-open {
+    overflow: hidden;
 }

@@ -119,7 +119,7 @@
 <div class="flex-grow overflow-y-auto custom-scrollbar px-6 pb-8">
 <!-- National Collections -->
 <section class="mb-10">
-<h3 class="font-label-caps text-label-caps text-on-surface-variant/50 px-4 mb-4" data-i18n data-es="NACIONALES" data-en="NATIONAL">NACIONALES</h3>
+<h3 class="font-label-caps text-label-caps text-on-surface-variant/50 px-4 mb-4" data-i18n data-es="EQUIPOS LOCALES" data-en="LOCAL TEAMS">EQUIPOS LOCALES</h3>
 <nav class="space-y-1">
 <a class="drawer-category-link drawer-category-button flex items-center justify-between px-4 py-3 text-on-surface hover:bg-secondary-container/10 transition-all group rounded-sm" href="#" data-target="millonarios" data-region="colombian">
 <span class="font-headline-md text-headline-md text-[20px]" data-i18n data-es="Millonarios" data-en="Millonarios">Millonarios</span>
@@ -136,7 +136,7 @@
 </nav>
 </section>
 <!-- National Team Countries -->
-<section class="mb-10">
+<section class="hidden mb-10">
 <h3 class="font-label-caps text-label-caps text-on-surface-variant/50 px-4 mb-4" data-i18n data-es="SELECCIONES" data-en="Countries">SELECCIONES</h3>
 <nav class="space-y-1">
 <a class="drawer-category-link drawer-category-button flex items-center justify-between px-4 py-3 text-on-surface hover:bg-secondary-container/10 transition-all group rounded-sm" href="#" data-target="brasil" data-region="countries">
@@ -147,7 +147,7 @@
 </section>
 
 <!-- Club Teams -->
-<section class="mb-10">
+<section class="hidden mb-10">
 <h3 class="font-label-caps text-label-caps text-on-surface-variant/50 px-4 mb-4" data-i18n data-es="CLUBES" data-en="Clubs">CLUBES</h3>
 <nav class="space-y-1">
 <a class="drawer-category-link drawer-category-button flex items-center justify-between px-4 py-3 text-on-surface hover:bg-secondary-container/10 transition-all group rounded-sm" href="#" data-target="realMadrid" data-region="clubs">
@@ -164,10 +164,20 @@
 </a>
 </nav>
 </section>
+<!-- Apparel / Buzos -->
+<section class="mb-10">
+<h3 class="font-label-caps text-label-caps text-on-surface-variant/50 px-4 mb-4" data-i18n data-es="PRENDAS" data-en="APPAREL">PRENDAS</h3>
+<nav class="space-y-1">
+<a class="drawer-category-link drawer-category-button flex items-center justify-between px-4 py-3 text-on-surface hover:bg-secondary-container/10 transition-all group rounded-sm" href="#" data-target="buzos" data-region="buzos">
+<span class="font-headline-md text-headline-md text-[20px]" data-i18n data-es="Buzos" data-en="Hoodies">Buzos</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0">chevron_right</span>
+</a>
+</nav>
+</section>
 </div>
 <!-- Footer Actions -->
 <div class="mt-auto p-6 bg-surface-container-low/50 border-t border-outline-variant/10">
-<a class="flex items-center justify-center gap-3 w-full py-4 bg-secondary text-on-secondary font-label-caps text-label-caps hover:bg-secondary-fixed-dim transition-colors active:scale-95 duration-200" href="https://wa.me/#" aria-label="Contacta por WhatsApp">
+<a class="flex items-center justify-center gap-3 w-full py-4 bg-secondary text-on-secondary font-label-caps text-label-caps hover:bg-secondary-fixed-dim transition-colors active:scale-95 duration-200" href="https://wa.me/573235282928" target="_blank" aria-label="Contacta por WhatsApp">
 <span class="material-symbols-outlined text-xl">chat</span>
                 <span data-i18n data-es="Contacta por WhatsApp" data-en="WHATSAPP CONCIERGE">Contacta por WhatsApp</span>
             </a>
@@ -176,16 +186,22 @@
 <!-- TopAppBar -->
 <header class="fixed top-0 w-full z-50 glass-header border-b border-outline-variant/30 flex justify-between items-center px-margin-mobile h-16">
 <div class="flex items-center gap-4">
-<button class="text-secondary hover:opacity-80 transition-opacity active:scale-95 duration-200" onclick="toggleDrawer()" aria-expanded="false" aria-controls="nav-drawer" aria-label="Abrir menú de navegación">
+<button id="menu-button" class="text-secondary hover:opacity-80 transition-opacity active:scale-95 duration-200" aria-label="Abrir menú" onclick="toggleDrawer()">
 <span class="material-symbols-outlined">menu</span>
 </button>
 <button id="home-logo" class="font-label-caps text-label-caps text-secondary uppercase tracking-widest hover:text-secondary-fixed-dim" type="button" aria-label="Ir a Selecciones">RD</button>
+<a class="flex items-center justify-center w-8 h-8 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white transition-all hover:scale-110 active:scale-90 shadow-md shadow-emerald-950/20" href="https://wa.me/573235282928" target="_blank" aria-label="Contactar por WhatsApp">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436.002 9.858-4.395 9.86-9.813.001-2.624-1.017-5.091-2.868-6.944-1.851-1.854-4.312-2.873-6.936-2.874-5.44 0-9.863 4.397-9.865 9.816-.001 1.761.464 3.48 1.344 5.008l-.995 3.637 3.733-.979zm11.758-6.974c-.302-.151-1.787-.882-2.063-.982-.277-.1-.478-.151-.68.151-.202.302-.782.982-.958 1.183-.176.202-.353.226-.655.076-1.22-.61-2.023-1.066-2.836-2.464-.213-.368.213-.341.61-1.135.06-.12.03-.226-.015-.327-.045-.1-.403-.972-.553-1.332-.146-.352-.296-.304-.407-.31-.105-.005-.226-.006-.347-.006s-.317.045-.483.226c-.166.181-.634.62-.634 1.512s.65 1.753.74 1.874c.09.12 1.28 1.954 3.102 2.742 1.63.702 1.96.562 2.31.528.35-.034 1.127-.46 1.286-.906.16-.445.16-.827.113-.906-.047-.08-.176-.131-.478-.282z"></path>
+</svg>
+</a>
 </div>
 <span class="font-headline-lg-mobile text-headline-lg-mobile tracking-tighter text-secondary" data-i18n data-es="Ropa Deportiva" data-en="Sportswear">Ropa Deportiva</span>
 <div class="flex items-center gap-2">
 <button id="lang-toggle" class="rounded-full border border-outline-variant/40 px-3 py-1 text-[11px] font-label-caps uppercase tracking-[0.2em] text-secondary hover:bg-secondary/10" type="button" aria-label="Cambiar idioma">EN</button>
-<button class="text-secondary hover:opacity-80 transition-opacity active:scale-95 duration-200" aria-label="Ver carrito">
+<button id="cart-button" class="relative text-secondary hover:opacity-80 transition-opacity active:scale-95 duration-200" aria-label="Ver carrito" onclick="toggleCart()">
 <span class="material-symbols-outlined">shopping_bag</span>
+<span id="cart-badge" class="hidden absolute -top-1.5 -right-1.5 flex h-4.5 w-4.5 items-center justify-center rounded-full bg-secondary text-[9px] font-bold text-on-secondary shadow-sm">0</span>
 </button>
 </div>
 </header>
@@ -193,9 +209,9 @@
 <div class="flex flex-col">
 <!-- Main Tabs with sliding indicator -->
 <div class="flex justify-center gap-8 py-3 border-b border-outline-variant/5 tab-indicator-container" id="main-tabs">
-<button class="main-tab font-label-caps text-label-caps uppercase tracking-widest transition-all duration-300" data-index="0" data-region="colombian" data-i18n data-es="Nacional" data-en="National">Nacional</button>
-<button class="main-tab font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest hover:text-secondary transition-all duration-300" data-index="1" data-region="countries" data-i18n data-es="Selecciones" data-en="Countries">Selecciones</button>
-<button class="main-tab font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest hover:text-secondary transition-all duration-300" data-index="2" data-region="clubs" data-i18n data-es="Clubes" data-en="Clubs">Clubes</button>
+<button class="main-tab font-label-caps text-label-caps uppercase tracking-widest transition-all duration-300" data-index="0" data-region="colombian" data-i18n data-es="Equipos Locales" data-en="Local Teams">Equipos Locales</button>
+<button class="main-tab hidden font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest hover:text-secondary transition-all duration-300" data-index="1" data-region="countries" data-i18n data-es="Selecciones" data-en="Countries">Selecciones</button>
+<button class="main-tab hidden font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest hover:text-secondary transition-all duration-300" data-index="2" data-region="clubs" data-i18n data-es="Clubes" data-en="Clubs">Clubes</button>
 <button class="main-tab font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest hover:text-secondary transition-all duration-300" data-index="3" data-region="buzos" data-i18n data-es="Buzos" data-en="Hoodies">Buzos</button>
 <div class="tab-indicator" id="active-tab-line" style="width: 69px; left: 91px;"></div>
 </div>
@@ -226,26 +242,112 @@
 <p class="font-label-caps text-label-caps text-on-surface-variant mb-4" id="panel-label">Colección destacada</p>
 <h2 class="font-headline-lg text-headline-lg text-on-surface mb-6" id="panel-heading">Colección destacada</h2>
 <div class="relative h-[260px] rounded-3xl border border-outline-variant/10 bg-surface-container-highest flex items-center justify-center text-on-surface-variant text-center overflow-hidden">
-<img id="panel-image" alt="" class="hidden absolute inset-0 w-full h-full object-cover" src="images/Estadio.jpeg">
+<img id="panel-image" alt="" class="hidden absolute inset-0 w-full h-full object-cover" src="images/equipos-locales/millonarios/coleccion-destacada/Estadio.jpeg">
+<div id="panel-feature-grid" class="hidden absolute inset-0 p-3"></div>
 <span id="panel-placeholder" class="relative z-10 px-6">Aquí irá la posible imagen adicional para la categoría seleccionada.</span>
 </div>
 </div>
 </section>
 <!-- Product Catalog Grid -->
 <section class="px-margin-mobile space-y-12">
-<!-- Large Featured Card -->
+<!-- Large Featured Cards for each Category -->
 <div class="reveal group flex flex-col gap-4 cursor-pointer active product-card" data-region="colombian" data-team="millonarios" data-title="Millonarios">
 <div class="relative aspect-[4/5] overflow-hidden bg-surface-container-low product-image-container">
-<img alt="Imagen de Millonarios" class="w-full h-full object-cover product-card-scale" src="images/millonarios.jpg" data-local-src="images/millonarios.jpg">
+<img alt="Imagen de Millonarios" class="w-full h-full object-cover product-card-scale" src="images/equipos-locales/millonarios/principal.jpg" data-local-src="images/equipos-locales/millonarios/principal.jpg">
+</div>
+</div>
+<div class="reveal group flex flex-col gap-4 cursor-pointer active product-card" data-region="buzos" data-team="buzos" data-title="Buzos">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container-low product-image-container">
+<img alt="Imagen de Buzos" class="w-full h-full object-cover product-card-scale" src="images/buzos/buzos/principal.jpg" data-local-src="images/buzos/buzos/principal.jpg">
+</div>
+</div>
+<div class="reveal group flex flex-col gap-4 cursor-pointer active product-card" data-region="colombian" data-team="nacional" data-title="Atlético Nacional">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container-low product-image-container">
+<img alt="Imagen de Atlético Nacional" class="w-full h-full object-cover product-card-scale" src="images/placeholder-product.svg" data-local-src="images/equipos-locales/atletico-nacional/principal.jpg">
+</div>
+</div>
+<div class="reveal group flex flex-col gap-4 cursor-pointer active product-card" data-region="colombian" data-team="santafe" data-title="Santa Fe">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container-low product-image-container">
+<img alt="Imagen de Santa Fe" class="w-full h-full object-cover product-card-scale" src="images/equipos-locales/santafe/principal.jpg" data-local-src="images/equipos-locales/santafe/principal.jpg">
+</div>
+</div>
+<div class="reveal group flex flex-col gap-4 cursor-pointer active product-card" data-region="countries" data-team="brasil" data-title="Brasil">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container-low product-image-container">
+<img alt="Imagen de Brasil" class="w-full h-full object-cover product-card-scale" src="images/placeholder-product.svg" data-local-src="images/selecciones/brasil/principal.jpg">
+</div>
+</div>
+<div class="reveal group flex flex-col gap-4 cursor-pointer active product-card" data-region="clubs" data-team="realMadrid" data-title="Real Madrid">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container-low product-image-container">
+<img alt="Imagen de Real Madrid" class="w-full h-full object-cover product-card-scale" src="images/placeholder-product.svg" data-local-src="images/clubes/real-madrid/principal.jpg">
+</div>
+</div>
+<div class="reveal group flex flex-col gap-4 cursor-pointer active product-card" data-region="clubs" data-team="liverpool" data-title="Liverpool">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container-low product-image-container">
+<img alt="Imagen de Liverpool" class="w-full h-full object-cover product-card-scale" src="images/placeholder-product.svg" data-local-src="images/clubes/liverpool/principal.jpg">
+</div>
+</div>
+<div class="reveal group flex flex-col gap-4 cursor-pointer active product-card" data-region="clubs" data-team="juventus" data-title="Juventus">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container-low product-image-container">
+<img alt="Imagen de Juventus" class="w-full h-full object-cover product-card-scale" src="images/placeholder-product.svg" data-local-src="images/clubes/juventus/principal.jpg">
 </div>
 </div>
 <!-- Bento Style Secondary Grid -->
 <h3 class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">CATÁLOGO</h3>
-<div class="grid grid-cols-2 gap-gutter">
+<div class="grid grid-cols-2 md:grid-cols-3 gap-gutter max-w-[1100px] mx-auto justify-items-center">
 <!-- Product Item -->
-<div class="reveal group flex flex-col gap-3 cursor-pointer active product-card" data-region="clubs" data-team="realMadrid" data-title="Real Madrid">
+<div id="buzo-oversize" class="reveal group flex flex-col gap-3 cursor-pointer active product-card catalog-card scroll-mt-48" data-region="buzos" data-team="buzos" data-title="Buzo Oversize">
+<div class="relative aspect-square overflow-hidden bg-surface-container-low product-image-container">
+<img alt="Imagen de Buzo Oversize" class="w-full h-full object-cover product-card-scale" src="images/buzos/buzos/catalogo/buzo-oversize.jpg">
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="font-label-caps text-[11px] uppercase tracking-widest text-on-surface">Buzo Oversize</span>
+<span class="font-body-md font-bold text-secondary">$119.900 COP</span>
+</div>
+</div>
+<!-- Product Item -->
+<div id="buzo-premium" class="reveal group flex flex-col gap-3 cursor-pointer active product-card catalog-card scroll-mt-48" data-region="buzos" data-team="buzos" data-title="Buzo Premium">
+<div class="relative aspect-square overflow-hidden bg-surface-container-low product-image-container">
+<img alt="Imagen de Buzo Premium" class="w-full h-full object-cover product-card-scale" src="images/buzos/buzos/catalogo/buzo-morado.jpg">
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="font-label-caps text-[11px] uppercase tracking-widest text-on-surface">Buzo Premium</span>
+<span class="font-body-md font-bold text-secondary">$129.900 COP</span>
+</div>
+</div>
+<!-- Product Item -->
+<div id="buzo-adidas" class="reveal group flex flex-col gap-3 cursor-pointer active product-card catalog-card scroll-mt-48" data-region="buzos" data-team="buzos" data-title="Buzo Adidas">
+<div class="relative aspect-square overflow-hidden bg-surface-container-low product-image-container">
+<img alt="Imagen de Buzo Adidas" class="w-full h-full object-cover product-card-scale" src="images/buzos/buzos/catalogo/ADIDAS-VERDE-NEGRO.jpeg">
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="font-label-caps text-[11px] uppercase tracking-widest text-on-surface">Buzo Adidas</span>
+<span class="font-body-md font-bold text-secondary">$129.900 COP</span>
+</div>
+</div>
+<!-- Product Item -->
+<div id="buzo-polo" class="reveal group flex flex-col gap-3 cursor-pointer active product-card catalog-card scroll-mt-48" data-region="buzos" data-team="buzos" data-title="Polo Verde">
+<div class="relative aspect-square overflow-hidden bg-surface-container-low product-image-container">
+<img alt="Imagen de Polo Verde" class="w-full h-full object-cover product-card-scale" src="images/buzos/buzos/catalogo/POLO-VERDE.jpeg">
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="font-label-caps text-[11px] uppercase tracking-widest text-on-surface">Polo Verde</span>
+<span class="font-body-md font-bold text-secondary">$119.900 COP</span>
+</div>
+</div>
+<!-- Product Item -->
+<div id="buzo-classic" class="reveal group flex flex-col gap-3 cursor-pointer active product-card catalog-card scroll-mt-48" data-region="buzos" data-team="buzos" data-title="Buzo Classic">
+<div class="relative aspect-square overflow-hidden bg-surface-container-low product-image-container">
+<img alt="Imagen de Buzo Classic" class="w-full h-full object-cover product-card-scale" src="images/buzos/buzos/catalogo/principal.jpg">
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="font-label-caps text-[11px] uppercase tracking-widest text-on-surface">Buzo Classic</span>
+<span class="font-body-md font-bold text-secondary">$109.900 COP</span>
+</div>
+</div>
+<!-- Product Item -->
+<div class="reveal group flex flex-col gap-3 cursor-pointer active product-card catalog-card" data-region="clubs" data-team="realMadrid" data-title="Real Madrid">
 <div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low product-image-container">
-<img alt="Imagen de Real Madrid" class="w-full h-full object-cover product-card-scale" src="images/placeholder-product.svg" data-local-src="images/real-madrid.jpg">
+<img alt="Imagen de Real Madrid" class="w-full h-full object-cover product-card-scale" src="images/placeholder-product.svg" data-local-src="images/clubes/real-madrid/catalogo/real-madrid.jpg">
 </div>
 <div class="flex flex-col items-center text-center">
 <span class="font-label-caps text-[11px] uppercase tracking-widest text-on-surface">Real Madrid</span>
@@ -255,7 +357,7 @@
 <!-- Product Item -->
 <div class="reveal group flex flex-col gap-3 cursor-pointer active product-card catalog-card" data-region="colombian" data-team="millonarios" data-title="Catálogo Millonarios">
 <div class="relative aspect-square overflow-hidden bg-surface-container-low product-image-container">
-<img alt="Catálogo Millonarios 80 años" class="w-full h-full object-cover product-card-scale cursor-zoom-in" src="images/imagenBanner.jpeg" data-lightbox-image>
+<img alt="Catálogo Millonarios 80 años" class="w-full h-full object-cover product-card-scale cursor-zoom-in" src="images/equipos-locales/millonarios/catalogo/imagenBanner.jpg" data-lightbox-image>
 </div>
 <div class="flex flex-col items-center text-center">
 <span class="font-label-caps text-[11px] uppercase tracking-widest text-on-surface">Millonarios 80 años</span>
@@ -265,7 +367,7 @@
 <!-- Product Item -->
 <div class="reveal group flex flex-col gap-3 cursor-pointer active product-card catalog-card" data-region="colombian" data-team="nacional" data-title="Atlético Nacional">
 <div class="relative aspect-square overflow-hidden bg-surface-container-low product-image-container">
-<img alt="Imagen de Atlético Nacional" class="w-full h-full object-cover product-card-scale" src="images/placeholder-product.svg" data-local-src="images/nacional.jpg">
+<img alt="Imagen de Atlético Nacional" class="w-full h-full object-cover product-card-scale" src="images/placeholder-product.svg" data-local-src="images/equipos-locales/atletico-nacional/catalogo/atletico-nacional.jpg">
 </div>
 <div class="flex flex-col items-center text-center">
 <span class="font-label-caps text-[11px] uppercase tracking-widest text-on-surface">Atlético Nacional</span>
@@ -273,9 +375,9 @@
 </div>
 </div>
 <!-- Product Item -->
-<div class="reveal group flex flex-col gap-3 cursor-pointer active product-card catalog-card" data-region="colombian" data-team="santafe" data-title="Santa Fe">
+<div id="santafe-card" class="reveal group flex flex-col gap-3 cursor-pointer active product-card catalog-card scroll-mt-48" data-region="colombian" data-team="santafe" data-title="Santa Fe">
 <div class="relative aspect-square overflow-hidden bg-surface-container-low product-image-container">
-<img alt="Imagen de Santa Fe" class="w-full h-full object-cover product-card-scale" src="images/placeholder-product.svg" data-local-src="images/santafe.jpg">
+<img alt="Imagen de Santa Fe" class="w-full h-full object-cover product-card-scale" src="images/equipos-locales/santafe/catalogo/edicion-santafe.jpeg">
 </div>
 <div class="flex flex-col items-center text-center">
 <span class="font-label-caps text-[11px] uppercase tracking-widest text-on-surface">Santa Fe</span>
@@ -285,7 +387,7 @@
 <!-- Product Item -->
 <div class="reveal group flex flex-col gap-3 cursor-pointer active product-card catalog-card" data-region="countries" data-team="brasil" data-title="Brasil">
 <div class="relative aspect-square overflow-hidden bg-surface-container-low product-image-container">
-<img alt="Imagen de Brasil" class="w-full h-full object-cover product-card-scale" src="images/placeholder-product.svg" data-local-src="images/brasil.jpg">
+<img alt="Imagen de Brasil" class="w-full h-full object-cover product-card-scale" src="images/placeholder-product.svg" data-local-src="images/selecciones/brasil/catalogo/brasil.jpg">
 </div>
 <div class="flex flex-col items-center text-center">
 <span class="font-label-caps text-[11px] uppercase tracking-widest text-on-surface">Brasil</span>
@@ -295,7 +397,7 @@
 <!-- Product Item -->
 <div class="reveal group flex flex-col gap-3 cursor-pointer active product-card catalog-card" data-region="clubs" data-team="liverpool" data-title="Liverpool">
 <div class="relative aspect-square overflow-hidden bg-surface-container-low product-image-container">
-<img alt="Imagen de Liverpool" class="w-full h-full object-cover product-card-scale" src="images/placeholder-product.svg" data-local-src="images/liverpool.jpg">
+<img alt="Imagen de Liverpool" class="w-full h-full object-cover product-card-scale" src="images/placeholder-product.svg" data-local-src="images/clubes/liverpool/catalogo/liverpool.jpg">
 </div>
 <div class="flex flex-col items-center text-center">
 <span class="font-label-caps text-[11px] uppercase tracking-widest text-on-surface">Liverpool</span>
@@ -305,7 +407,7 @@
 <!-- Product Item -->
 <div class="reveal group flex flex-col gap-3 cursor-pointer active product-card catalog-card" data-region="clubs" data-team="juventus" data-title="Juventus">
 <div class="relative aspect-square overflow-hidden bg-surface-container-low product-image-container">
-<img alt="Imagen de Juventus" class="w-full h-full object-cover product-card-scale" src="images/placeholder-product.svg" data-local-src="images/juventus.jpg">
+<img alt="Imagen de Juventus" class="w-full h-full object-cover product-card-scale" src="images/placeholder-product.svg" data-local-src="images/clubes/juventus/catalogo/juventus.jpg">
 </div>
 <div class="flex flex-col items-center text-center">
 <span class="font-label-caps text-[11px] uppercase tracking-widest text-on-surface">Juventus</span>
@@ -322,7 +424,7 @@
 <p class="font-body-md text-on-surface-variant mb-8 max-w-[280px]" data-i18n data-es="Recibe notificaciones de lanzamientos y atención por WhatsApp." data-en="Receive notifications for limited heritage drops and atelier appointments.">Recibe notificaciones de lanzamientos y atención por WhatsApp.</p>
 <div class="w-full max-w-sm">
 <div class="relative border-b border-outline-variant group focus-within:border-secondary transition-colors duration-500">
-<input class="w-full bg-transparent border-none py-4 px-0 font-label-caps text-label-caps text-on-surface focus:ring-0 placeholder:text-on-surface-variant/40" placeholder="EMAIL ADDRESS" type="email">
+<input class="w-full bg-transparent border-none py-4 px-0 font-label-caps text-label-caps text-on-surface focus:ring-0 placeholder:text-on-surface-variant/40" placeholder="CORREO ELECTRÓNICO" type="email" data-i18n data-es="CORREO ELECTRÓNICO" data-en="EMAIL ADDRESS">
 <button class="absolute right-0 top-1/2 -translate-y-1/2 text-secondary hover:translate-x-1 transition-transform duration-300">
 <span class="material-symbols-outlined">arrow_right_alt</span>
 </button>
@@ -331,12 +433,63 @@
 </div>
 </section>
 </main>
-<div id="image-lightbox" class="fixed inset-0 z-[90] hidden items-center justify-center bg-black/85 p-4" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Vista ampliada de imagen">
-<button id="lightbox-close" class="absolute right-4 top-4 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-surface-container-high text-secondary hover:bg-surface-container-highest" type="button" aria-label="Cerrar imagen ampliada">
-<span class="material-symbols-outlined">close</span>
+<div id="image-lightbox" class="fixed inset-0 z-[90] hidden flex-col items-center justify-center bg-black/90 select-none" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Vista ampliada de imagen">
+<button id="lightbox-close" class="absolute right-6 top-6 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-surface-container-high/80 text-secondary hover:bg-secondary hover:text-on-secondary hover:scale-105 active:scale-95 transition-all duration-300 shadow-lg backdrop-blur-sm" type="button" aria-label="Cerrar imagen ampliada">
+<span class="material-symbols-outlined text-2xl">close</span>
 </button>
-<img id="lightbox-image" alt="" class="max-h-[88vh] max-w-[92vw] object-contain shadow-2xl">
+<div id="lightbox-img-container" class="w-full h-full flex items-center justify-center overflow-hidden cursor-grab active:cursor-grabbing">
+<img id="lightbox-image" alt="" class="max-h-[85vh] max-w-[90vw] object-contain shadow-2xl pointer-events-none select-none transition-transform duration-200 ease-out origin-center" style="transform: translate(0px, 0px) scale(1);">
 </div>
+<div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-4 px-6 py-3 rounded-full bg-surface-container-highest/90 border border-outline-variant/30 shadow-2xl backdrop-blur-md z-50">
+<button id="zoom-out-btn" class="flex h-10 w-10 items-center justify-center rounded-full text-secondary hover:bg-secondary/15 active:scale-90 transition-all duration-200" title="Alejar (-50%)">
+<span class="material-symbols-outlined text-2xl">zoom_out</span>
+</button>
+<span id="zoom-percent" class="font-label-caps text-xs tracking-widest text-secondary min-w-[50px] text-center">100%</span>
+<button id="zoom-in-btn" class="flex h-10 w-10 items-center justify-center rounded-full text-secondary hover:bg-secondary/15 active:scale-90 transition-all duration-200" title="Acercar (+50%)">
+<span class="material-symbols-outlined text-2xl">zoom_in</span>
+</button>
+<div class="h-6 w-[1px] bg-outline-variant/30"></div>
+<button id="zoom-reset-btn" class="flex h-10 w-10 items-center justify-center rounded-full text-secondary hover:bg-secondary/15 active:scale-90 transition-all duration-200" title="Restablecer vista">
+<span class="material-symbols-outlined text-2xl">zoom_out_map</span>
+</button>
+</div>
+</div>
+<!-- Shopping Cart Drawer (Right Slide-over) -->
+<div class="fixed inset-0 z-[60] bg-black/70 backdrop-blur-sm hidden" id="cart-overlay" onclick="toggleCart()"></div>
+<aside class="fixed top-0 right-0 h-full w-[85vw] max-w-[400px] z-[70] bg-primary-container shadow-2xl flex flex-col border-l border-outline-variant/20 translate-x-full transition-transform duration-300" id="cart-drawer" role="dialog" aria-modal="true" aria-label="Carrito de compras">
+    <!-- Cart Header -->
+    <div class="flex justify-between items-center px-6 py-6 border-b border-outline-variant/10">
+        <div class="font-headline-md text-headline-md text-secondary tracking-tighter flex items-center gap-2">
+            <span class="material-symbols-outlined text-2xl">shopping_bag</span>
+            <span data-i18n data-es="Carrito" data-en="Cart">Carrito</span>
+        </div>
+        <button class="text-on-surface-variant hover:text-secondary transition-colors duration-300" onclick="toggleCart()" aria-label="Cerrar carrito">
+            <span class="material-symbols-outlined text-3xl">close</span>
+        </button>
+    </div>
+    
+    <!-- Cart Items list -->
+    <div class="flex-grow overflow-y-auto custom-scrollbar p-6 space-y-4" id="cart-items-container">
+        <div class="flex flex-col items-center justify-center h-full text-center text-on-surface-variant/60 gap-4" id="cart-empty-message">
+            <span class="material-symbols-outlined text-5xl">shopping_cart</span>
+            <p class="font-body-md" data-i18n data-es="Tu carrito está vacío." data-en="Your cart is empty.">Tu carrito está vacío.</p>
+        </div>
+    </div>
+    
+    <!-- Cart Footer / Summary -->
+    <div class="p-6 bg-surface-container-low/50 border-t border-outline-variant/10 space-y-4" id="cart-footer">
+        <div class="flex justify-between items-center">
+            <span class="font-label-caps text-label-caps text-on-surface-variant" data-i18n data-es="Total" data-en="Total">Total</span>
+            <span class="font-headline-md text-headline-md font-bold text-secondary" id="cart-total-price">$0 COP</span>
+        </div>
+        <button class="flex items-center justify-center gap-3 w-full py-4 rounded-2xl bg-secondary hover:bg-secondary-fixed-dim text-on-secondary transition-all hover:scale-[1.02] active:scale-[0.98] font-label-caps text-[11px] uppercase tracking-widest shadow-lg shadow-secondary/10 disabled:opacity-50 disabled:pointer-events-none" id="checkout-whatsapp-btn" onclick="sendWhatsappCheckout()" disabled>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436.002 9.858-4.395 9.86-9.813.001-2.624-1.017-5.091-2.868-6.944-1.851-1.854-4.312-2.873-6.936-2.874-5.44 0-9.863 4.397-9.865 9.816-.001 1.761.464 3.48 1.344 5.008l-.995 3.637 3.733-.979zm11.758-6.974c-.302-.151-1.787-.882-2.063-.982-.277-.1-.478-.151-.68.151-.202.302-.782.982-.958 1.183-.176.202-.353.226-.655.076-1.22-.61-2.023-1.066-2.836-2.464-.213-.368.213-.341.61-1.135.06-.12.03-.226-.015-.327-.045-.1-.403-.972-.553-1.332-.146-.352-.296-.304-.407-.31-.105-.005-.226-.006-.347-.006s-.317.045-.483.226c-.166.181-.634.62-.634 1.512s.65 1.753.74 1.874c.09.12 1.28 1.954 3.102 2.742 1.63.702 1.96.562 2.31.528.35-.034 1.127-.46 1.286-.906.16-.445.16-.827.113-.906-.047-.08-.176-.131-.478-.282z"></path>
+            </svg>
+            <span data-i18n data-es="Confirmar Disponibilidad" data-en="Confirm Availability">Confirmar Disponibilidad</span>
+        </button>
+    </div>
+</aside>
 <script src="script.js"></script>
 
 
