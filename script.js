@@ -111,7 +111,8 @@ function updateProductPanel(category) {
         juventus: 'Juventus',
         realMadrid: 'Real Madrid',
         liverpool: 'Liverpool',
-        santafe: 'Santa Fe'
+        santafe: 'Santa Fe',
+        buzos: 'Buzos'
     };
     const categoryImages = {
         millonarios: 'images/Estadio.jpeg',
